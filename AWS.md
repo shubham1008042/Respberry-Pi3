@@ -37,6 +37,7 @@ Step 1: Register your device in the registry:
 14.Choose the policy you created (MyIotPolicy) and choose Attach.
 
 
+
 Step 2: Create and Activate a Device Certificate:
 
 1.Choose Create certificate. 
@@ -44,6 +45,8 @@ Step 2: Create and Activate a Device Certificate:
 2.On the Certificate created! page, choose Download for the certificate, private key, and the root CA for AWS IoT (the public key need not be downloaded). Save each of them to your computer, and then choose Activate to continue. 
 
 3.Choose Done to return to the AWS IoT console main page. 
+
+
 
 Step 3: Create an AWS IoT Policy:
 
@@ -54,6 +57,7 @@ Step 3: Create an AWS IoT Policy:
 3.After you have entered the information for your policy, choose Create. 
 
 
+
 Step 4: Attach an AWS IoT Policy to a Device Certificate :
 
 1.In the left navigation pane, choose Secure, and then Certificates. 
@@ -61,6 +65,8 @@ Step 4: Attach an AWS IoT Policy to a Device Certificate :
 2.In the box for the certificate you created, choose ... to open a drop-down menu, and then choose Attach policy. 
 
 3.In the Attach policies to certificate(s) dialog box, select the check box next to the policy you created in the previous step, and then choose Attach. 
+
+
 
 Step 5: Attach a Certificate to a Thing:
 
@@ -74,9 +80,13 @@ Step 5: Attach a Certificate to a Thing:
 
 5.To verify the policy is attached, on the Details page for the certificate, in the left navigation pane, choose Policies. 
 
+
+
 Step 6: Configure Your Device:
 
 All devices must have a device certificate, private key, and root CA certificate installed in order to communicate with AWS IoT. Consult your device's documentation to connect to it and copy your device certificate, private key, and root CA certificate onto your device. 
+
+
 
 Step 7: View Device MQTT Messages with the AWS IoT MQTT Client :
 
@@ -87,6 +97,8 @@ Step 7: View Device MQTT Messages with the AWS IoT MQTT Client :
 Choosing Subscribe to topic above, results in the topic my/topic appearing in the Subscriptions column. 
 
 Choose Publish to topic. You should see the message in the AWS IoT MQTT client (choose my/topic in the Subscription column to see the message). 
+
+
 
 Step 8: Configure and Test Rules:
 
@@ -132,6 +144,8 @@ c) Create a Rule:
 9. Under IAM role name, choose Update role to apply the permissions to the newly created role, choose the newly created role, and choose Add action. 
 
 10. On the Create a Rule page, choose Create rule. 
+
+
 
 Step 9: Test the Amazon SNS Rule:
 
