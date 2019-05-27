@@ -1,6 +1,6 @@
                                           Connect Device To AWS IoT Core
-
-Step 1: Register your device in the registry:
+ 
+     Step 1: Register your device in the registry:
 
 1.On the Welcome to the AWS IoT Console page, in the navigation pane, choose Manage.
 
@@ -38,7 +38,7 @@ Step 1: Register your device in the registry:
 
 
 
-Step 2: Create and Activate a Device Certificate:
+     Step 2: Create and Activate a Device Certificate:
 
 1.Choose Create certificate. 
 
@@ -48,7 +48,7 @@ Step 2: Create and Activate a Device Certificate:
 
 
 
-Step 3: Create an AWS IoT Policy:
+     Step 3: Create an AWS IoT Policy:
 
 1.In the left navigation pane, choose Secure, and then Policies. On the You don't have a policy yet page, choose Create a policy. 
 
@@ -58,7 +58,7 @@ Step 3: Create an AWS IoT Policy:
 
 
 
-Step 4: Attach an AWS IoT Policy to a Device Certificate :
+     Step 4: Attach an AWS IoT Policy to a Device Certificate :
 
 1.In the left navigation pane, choose Secure, and then Certificates. 
 
@@ -68,7 +68,7 @@ Step 4: Attach an AWS IoT Policy to a Device Certificate :
 
 
 
-Step 5: Attach a Certificate to a Thing:
+     Step 5: Attach a Certificate to a Thing:
 
 1.In the box for the certificate you created, choose ... to open a drop-down menu, and then choose Attach thing. 
 
@@ -82,13 +82,13 @@ Step 5: Attach a Certificate to a Thing:
 
 
 
-Step 6: Configure Your Device:
+     Step 6: Configure Your Device:
 
 All devices must have a device certificate, private key, and root CA certificate installed in order to communicate with AWS IoT. Consult your device's documentation to connect to it and copy your device certificate, private key, and root CA certificate onto your device. 
 
 
 
-Step 7: View Device MQTT Messages with the AWS IoT MQTT Client :
+     Step 7: View Device MQTT Messages with the AWS IoT MQTT Client :
 
 1.In the AWS IoT console, in the left navigation pane, choose Test. 
 
@@ -100,7 +100,7 @@ Choose Publish to topic. You should see the message in the AWS IoT MQTT client (
 
 
 
-Step 8: Configure and Test Rules:
+     Step 8: Configure and Test Rules:
 
 a) Create an SNS Topic:
 Use the Amazon SNS console to create an Amazon SNS topic.
@@ -146,8 +146,7 @@ c) Create a Rule:
 10. On the Create a Rule page, choose Create rule. 
 
 
-
-Step 9: Test the Amazon SNS Rule:
+        Step 9: Test the Amazon SNS Rule:
 
 1. In the AWS IoT console, in the left navigation pane, choose Test. 
 
