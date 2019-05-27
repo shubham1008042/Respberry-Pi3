@@ -2,27 +2,38 @@
 
 Register your device in the registry:
 
-1.On the Welcome to the AWS IoT Console page, in the navigation pane, choose Manage. 
+1.On the Welcome to the AWS IoT Console page, in the navigation pane, choose Manage.
+
 2.On the You don't have any things yet page, choose Register a thing. 
+
 3.On the Creating AWS IoT things page, choose Create a single thing. 
+
 4.On the Create a thing page, in the Name field, type a name for your thing, such as  MyIotThing. Choose Next
+
 5.On the Add a certificate for your thing page, choose Create certificate. This generates an X.509 certificate and key pair. 
+
 6.On the Certificate created! page, download your public and private keys, certificate, and root certificate authority (CA): 
 1. Choose Download for your certificate. 
 2. Choose Download for your private key. 
 3. Choose Download for the Amazon root CA. This will display a new web page. 
 
 7.On the Add a policy for your thing page, choose Register Thing. 
+
 8.On the AWS IoT console, in the navigation pane, choose Secure and Policies. Choose Create. 
+
 9.On the Create a policy page: 
 1. Enter a Name for the policy, such as MyIotPolicy. 
 2. For Action, enter iot:*. For Resource ARN, enter *. 
 3. Under Effect, choose Allow, and then choose Create. 
 
 10.Choose Manage and then choose your AWS IoT thing. 
+
 11.Choose Security
+
 12.Choose your certificate.
+
 13.In the certificate detail page, choose Actions and then Attach policy.
+
 14.Choose the policy you created (MyIotPolicy) and choose Attach.
 
 
@@ -64,7 +75,7 @@ View Device MQTT Messages with the AWS IoT MQTT Client :
 Choosing Subscribe to topic above, results in the topic my/topic appearing in the Subscriptions column. 
 Choose Publish to topic. You should see the message in the AWS IoT MQTT client (choose my/topic in the Subscription column to see the message). 
 
-#Configure and Test Rules:
+Configure and Test Rules:
 
 Create an SNS Topic:
 Use the Amazon SNS console to create an Amazon SNS topic.
