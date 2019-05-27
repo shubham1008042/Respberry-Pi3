@@ -1,6 +1,6 @@
                                     Connect Device To AWS IoT Core
 
-Register your device in the registry:
+Step 1: Register your device in the registry:
 
 1.On the Welcome to the AWS IoT Console page, in the navigation pane, choose Manage.
 
@@ -37,7 +37,7 @@ Register your device in the registry:
 14.Choose the policy you created (MyIotPolicy) and choose Attach.
 
 
-Create and Activate a Device Certificate:
+Step 2: Create and Activate a Device Certificate:
 
 1.Choose Create certificate. 
 
@@ -45,7 +45,7 @@ Create and Activate a Device Certificate:
 
 3.Choose Done to return to the AWS IoT console main page. 
 
-Create an AWS IoT Policy:
+Step 3: Create an AWS IoT Policy:
 
 1.In the left navigation pane, choose Secure, and then Policies. On the You don't have a policy yet page, choose Create a policy. 
 
@@ -54,7 +54,7 @@ Create an AWS IoT Policy:
 3.After you have entered the information for your policy, choose Create. 
 
 
-Attach an AWS IoT Policy to a Device Certificate :
+Step 4: Attach an AWS IoT Policy to a Device Certificate :
 
 1.In the left navigation pane, choose Secure, and then Certificates. 
 
@@ -62,7 +62,7 @@ Attach an AWS IoT Policy to a Device Certificate :
 
 3.In the Attach policies to certificate(s) dialog box, select the check box next to the policy you created in the previous step, and then choose Attach. 
 
-Attach a Certificate to a Thing:
+Step 5: Attach a Certificate to a Thing:
 
 1.In the box for the certificate you created, choose ... to open a drop-down menu, and then choose Attach thing. 
 
@@ -74,11 +74,11 @@ Attach a Certificate to a Thing:
 
 5.To verify the policy is attached, on the Details page for the certificate, in the left navigation pane, choose Policies. 
 
-Configure Your Device:
+Step 6: Configure Your Device:
 
 All devices must have a device certificate, private key, and root CA certificate installed in order to communicate with AWS IoT. Consult your device's documentation to connect to it and copy your device certificate, private key, and root CA certificate onto your device. 
 
-View Device MQTT Messages with the AWS IoT MQTT Client :
+Step 7: View Device MQTT Messages with the AWS IoT MQTT Client :
 
 1.In the AWS IoT console, in the left navigation pane, choose Test. 
 
@@ -88,9 +88,9 @@ Choosing Subscribe to topic above, results in the topic my/topic appearing in th
 
 Choose Publish to topic. You should see the message in the AWS IoT MQTT client (choose my/topic in the Subscription column to see the message). 
 
-Configure and Test Rules:
+Step 8: Configure and Test Rules:
 
-Create an SNS Topic:
+a) Create an SNS Topic:
 Use the Amazon SNS console to create an Amazon SNS topic.
 
 Note:
@@ -103,7 +103,7 @@ Amazon SNS is not available in all AWS regions.
       b)Type a topic name and a display name, and then choose Create topic. 
       c)Make a note of the ARN for the topic you just created.
        
-Subscribe to an Amazon SNS Topic :
+b) Subscribe to an Amazon SNS Topic :
 
 To receive SMS messages on your cell phone, subscribe to the Amazon SNS topic.
 1. In the Amazon SNS console, select the check box next to the topic you just created. From the Actions menu, choose Subscribe to topic. 
@@ -111,7 +111,7 @@ To receive SMS messages on your cell phone, subscribe to the Amazon SNS topic.
 2. On Create subscription, from the Protocol drop-down list, choose SMS. 
 In the Endpoint field, type the phone number of an SMS-enabled cell phone, and then choose Create subscription. 
 
-Create a Rule:
+c) Create a Rule:
 
 1. In the AWS IoT console, in the left navigation pane, choose Act. 
 
@@ -133,7 +133,7 @@ Create a Rule:
 
 10. On the Create a Rule page, choose Create rule. 
 
-Test the Amazon SNS Rule:
+Step 9: Test the Amazon SNS Rule:
 
 1. In the AWS IoT console, in the left navigation pane, choose Test. 
 
