@@ -150,6 +150,7 @@ c) Create a Rule:
 
         Step 9: Test the Amazon SNS Rule:
 
+
 1. In the AWS IoT console, in the left navigation pane, choose Test. 
 
 2. On the MQTT client page, in the Publish section, in the Specify a topic and a message to publish… field, type my/topic or the topic you used in the rule. In the message payload section, type the following JSON: 
