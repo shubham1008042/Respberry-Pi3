@@ -1,4 +1,4 @@
-                                    Connect Device To AWS IoT Core
+                                          Connect Device To AWS IoT Core
 
 Step 1: Register your device in the registry:
 
